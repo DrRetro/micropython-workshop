@@ -42,7 +42,7 @@ def hsvtorgb(h, s, v):
     elif hi == 5: 
         r, g, b = v, p, q
     r, g, b = int(r * 255), int(g * 255), int(b * 255)
-    return r+r, g+g, b+b
+    return r, g, b
 
 
 def setPWM(Red, Green, Blue):
@@ -51,8 +51,8 @@ def setPWM(Red, Green, Blue):
     pwmBLUE.duty(Blue)
 
 
-def rgbtopwm(r, g, b)
-    return r*2, g*2, b*2
+def rgbtopwm(rgbarray):
+    return rgbarray[0]*2, rgbarray[1]*2, rgbarray[2]*2
 
 
 while True:
