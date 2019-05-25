@@ -1,0 +1,2 @@
+# Firmware Downloads:
+https://micropython.org/download#esp32
