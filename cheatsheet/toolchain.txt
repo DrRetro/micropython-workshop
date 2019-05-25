@@ -1,0 +1,19 @@
+mpy-utils
+=========
+Zu installieren mit: sudo -H pip3 install mpy-utils
+
+esptool
+=======
+Zu installieren mit: sudo -H pip3 install esptool
+
+
+
+
+
+Upload von dateien auf den ESP:
+===============================
+# mpy-upload --debug --reset --port /dev/ttyUSBX --baud XXXXXXX dateiname.py
+
+# Lazy CnP Beispiel:
+# mpy-upload --debug --reset --port /dev/ttyUSB0 --baud 115200 main.py
+
